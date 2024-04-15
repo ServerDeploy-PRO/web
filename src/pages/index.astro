@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navi from "../components/nav";
+import Features from "../components/features";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.webp" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <title>ServerDeploy</title>
+  </head>
+  <body class="">
+    <Navi />
+
+    <hr />
+    <h1 class="text-center font-sans text-7xl mt-64">
+      Reimagining the world of <br /> Hosting.
+    </h1>
+    <p class="text-center mt-16 text-xl">
+      ServerDeploy aims to become the best hosting there is, with us, you can
+      deploy the fastest and most affordable server you have ever seen! <br /> Takes
+      3 minutes to deploy.
+    </p>
+
+    <div class="flex justify-center items-center flex-row mt-16 space-x-4">
+      <button
+        type="button"
+        class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800"
+      >
+        Get Started
+      </button>
+      <button
+        type="button"
+        class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-blue-600 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-blue-500 dark:hover:bg-gray-800"
+      >
+        Contact Us
+      </button>
+    </div>
+
+    <div class="flex flex-col justify-center items-center mt-64">
+      <Features />
+    </div>
+
+    <div class="mt-64"></div>
+  </body>
+</html>
